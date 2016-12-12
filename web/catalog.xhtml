@@ -20,7 +20,7 @@
     <h:form>
         <p:dataTable var="book" value="#{catalogBean.books}">
             <p:column headerText="Title">
-                <p:link value="#{book.title}">
+                <p:link outcome="bookDetail" value="#{book.title}">
                     <f:param name="bookId" value="#{book.bookId}" />
                 </p:link>
             </p:column>
